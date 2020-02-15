@@ -7,11 +7,9 @@
 //
 
 import Foundation
+import Moya
 
-struct Response<T: Codable>: Codable {
-  let results: [T] = [T]()
-  
-  private enum CodingKeys: String, CodingKey {
-    case results
-  }
+struct Response: Decodable {
+  let resultCount: Int
+  let results: [Search]
 }

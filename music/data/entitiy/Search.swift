@@ -7,14 +7,15 @@
 //
 
 import Foundation
+import Moya
 
-struct Search: Codable {
-  let trackId: Int = 0
-  let artistName: String = ""
-  let collectionName: String = ""
-  let trackName: String = ""
-  let imageUrl: String = ""
-  let url: String = ""
+struct Search: Decodable {
+  let trackId: Int
+  let artistName: String
+  let collectionName: String
+  let trackName: String
+  let imageUrl: String
+  let url: String
   
   private enum CodingKeys: String, CodingKey {
     case trackId
