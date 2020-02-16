@@ -56,7 +56,6 @@ extension Screen {
   func setBackButtton(navigationVC: UINavigationController) {
     let backButton = UIBarButtonItem()
     backButton.title = ""
-    backButton.tintColor = UIColor.white
     navigationVC.viewControllers.last?.navigationItem.backBarButtonItem = backButton
   }
 }

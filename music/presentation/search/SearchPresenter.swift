@@ -29,4 +29,8 @@ class SearchPresenter: BasePresenter, SearchActionListener{
       }
     }
   }
+  
+  func onItemClicked(search: Search) {
+    self.view?.goToCollectionVC(search: search)
+  }
 }

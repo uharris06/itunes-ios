@@ -30,6 +30,13 @@
 		E379449123F8393200FE80B8 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379449023F8393200FE80B8 /* SearchRepository.swift */; };
 		E379449323F83C7300FE80B8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379449223F83C7300FE80B8 /* Response.swift */; };
 		E379449A23F84FCD00FE80B8 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379449923F84FCD00FE80B8 /* SearchPresenter.swift */; };
+		E37B9CFB23F9022F00918189 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B9CFA23F9022F00918189 /* CollectionViewController.swift */; };
+		E37B9D0023F90CCB00918189 /* StubBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B9CFF23F90CCB00918189 /* StubBaseView.swift */; };
+		E37B9D0223F90D7900918189 /* StubSearchRepositoryNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B9D0123F90D7900918189 /* StubSearchRepositoryNetwork.swift */; };
+		E37B9D0423F90DBD00918189 /* StubRestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B9D0323F90DBD00918189 /* StubRestApi.swift */; };
+		E37B9D0623F9101B00918189 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B9D0523F9101B00918189 /* Factory.swift */; };
+		E37B9D0823F911A600918189 /* StubSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B9D0723F911A600918189 /* StubSearchView.swift */; };
+		E37B9D0A23F9122300918189 /* SearchPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B9D0923F9122300918189 /* SearchPresenterTest.swift */; };
 		E37FD64D23F766AD00262C56 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FD64C23F766AD00262C56 /* Search.swift */; };
 		E37FD64F23F76A7500262C56 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FD64E23F76A7500262C56 /* Repository.swift */; };
 		E37FD65323F76B3900262C56 /* ItunesMusicApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FD65223F76B3900262C56 /* ItunesMusicApi.swift */; };
@@ -88,6 +95,13 @@
 		E379449023F8393200FE80B8 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
 		E379449223F83C7300FE80B8 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		E379449923F84FCD00FE80B8 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		E37B9CFA23F9022F00918189 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		E37B9CFF23F90CCB00918189 /* StubBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubBaseView.swift; sourceTree = "<group>"; };
+		E37B9D0123F90D7900918189 /* StubSearchRepositoryNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubSearchRepositoryNetwork.swift; sourceTree = "<group>"; };
+		E37B9D0323F90DBD00918189 /* StubRestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubRestApi.swift; sourceTree = "<group>"; };
+		E37B9D0523F9101B00918189 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		E37B9D0723F911A600918189 /* StubSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubSearchView.swift; sourceTree = "<group>"; };
+		E37B9D0923F9122300918189 /* SearchPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterTest.swift; sourceTree = "<group>"; };
 		E37FD64C23F766AD00262C56 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		E37FD64E23F76A7500262C56 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		E37FD65223F76B3900262C56 /* ItunesMusicApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesMusicApi.swift; sourceTree = "<group>"; };
@@ -233,6 +247,41 @@
 			path = search;
 			sourceTree = "<group>";
 		};
+		E37B9CF923F9005A00918189 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				E37B9CFA23F9022F00918189 /* CollectionViewController.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		E37B9CFC23F90BFD00918189 /* factory */ = {
+			isa = PBXGroup;
+			children = (
+				E37B9D0523F9101B00918189 /* Factory.swift */,
+			);
+			path = factory;
+			sourceTree = "<group>";
+		};
+		E37B9CFD23F90C0700918189 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E37B9CFF23F90CCB00918189 /* StubBaseView.swift */,
+				E37B9D0123F90D7900918189 /* StubSearchRepositoryNetwork.swift */,
+				E37B9D0323F90DBD00918189 /* StubRestApi.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		E37B9CFE23F90C5400918189 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E37B9D0723F911A600918189 /* StubSearchView.swift */,
+				E37B9D0923F9122300918189 /* SearchPresenterTest.swift */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
 		E37FD64423F75EEC00262C56 /* data */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +295,7 @@
 		E37FD64523F75EFB00262C56 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E37B9CF923F9005A00918189 /* detail */,
 				E34B4D6023F8866700169E07 /* di */,
 				E34B4D4B23F87CF800169E07 /* fundation */,
 				E379449823F84FA200FE80B8 /* search */,
@@ -331,6 +381,9 @@
 		E3B1395E23F6E47200A7F639 /* musicTests */ = {
 			isa = PBXGroup;
 			children = (
+				E37B9CFD23F90C0700918189 /* helpers */,
+				E37B9CFC23F90BFD00918189 /* factory */,
+				E37B9CFE23F90C5400918189 /* presentation */,
 				E3B1395F23F6E47200A7F639 /* musicTests.swift */,
 				E3B1396123F6E47200A7F639 /* Info.plist */,
 			);
@@ -603,6 +656,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37B9CFB23F9022F00918189 /* CollectionViewController.swift in Sources */,
 				E34B4D5A23F8810B00169E07 /* Wireframe.swift in Sources */,
 				E34B4D5823F880ED00169E07 /* UIApplicationExt.swift in Sources */,
 				E37FD64F23F76A7500262C56 /* Repository.swift in Sources */,
@@ -635,7 +689,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37B9D0823F911A600918189 /* StubSearchView.swift in Sources */,
+				E37B9D0223F90D7900918189 /* StubSearchRepositoryNetwork.swift in Sources */,
 				E3B1396023F6E47200A7F639 /* musicTests.swift in Sources */,
+				E37B9D0423F90DBD00918189 /* StubRestApi.swift in Sources */,
+				E37B9D0023F90CCB00918189 /* StubBaseView.swift in Sources */,
+				E37B9D0A23F9122300918189 /* SearchPresenterTest.swift in Sources */,
+				E37B9D0623F9101B00918189 /* Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,7 +864,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 299PJ79AAL;
 				INFOPLIST_FILE = music/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -824,7 +884,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 299PJ79AAL;
 				INFOPLIST_FILE = music/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

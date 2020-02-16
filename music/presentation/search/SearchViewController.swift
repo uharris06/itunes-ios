@@ -16,9 +16,6 @@ class SearchViewController: BaseViewController<SearchPresenter>, SearchView {
   var offset: Int = 0
   
   let searchController = UISearchController(searchResultsController: nil)
-  var isSearchBarEmpty: Bool {
-    return searchController.searchBar.text?.isEmpty ?? true
-  }
   
   var dataSource: SearchTableViewDataSource?
   var delegate: SearchTableViewDelegate?
@@ -34,6 +31,9 @@ class SearchViewController: BaseViewController<SearchPresenter>, SearchView {
     
     dataSource = SearchTableViewDataSource()
     delegate = SearchTableViewDelegate(onSearchSelected: { (index) in
+      self.searchController.dismiss(animated: true) {
+          self.presenter.onItemClicked(search: self.dataSource!.searchList[index])
+      }
     }, onLoadMoreData: {
       if !(self.delegate?.isLoading ?? false) {
         if !self.term.isEmpty {
@@ -53,6 +53,10 @@ class SearchViewController: BaseViewController<SearchPresenter>, SearchView {
     searchTableView.reloadData()
     self.delegate?.isLoading = false
   }
+  
+  func goToCollectionVC(search: Search) {
+    wireframe.collection(search: search).show()
+  }
 }
 
 extension SearchViewController: UISearchResultsUpdating, UISearchBarDelegate {
@@ -63,6 +67,17 @@ extension SearchViewController: UISearchResultsUpdating, UISearchBarDelegate {
     term = searchBar.text ?? ""
     offset = 0
     presenter.fetchSearch(term: term)
+    scrollToTop()
     dataSource?.searchList.removeAll()
+  }
+  
+  private func scrollToTop() {
+      let topRow = IndexPath(row: 0,
+                             section: 0)
+    if !(dataSource?.searchList.isEmpty ?? false) {
+      self.searchTableView.scrollToRow(at: topRow,
+                                 at: .top,
+                                 animated: true)
+    }
   }
 }

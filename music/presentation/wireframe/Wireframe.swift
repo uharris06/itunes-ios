@@ -9,6 +9,14 @@ import UIKit
 import Swinject
 
 class Wireframe {
+  
+  func collection(search: Search) -> Screen {
+    let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+    let collectionVC = storyboard.instantiateViewController(withIdentifier: String(describing: CollectionViewController.self)) as! CollectionViewController
+    collectionVC.search = search
+    return Screen(viewController: collectionVC, isModal: false)
+  }
+  
   func popCurrentScreen(_ completion: @escaping (() -> Void) = { }) {
     // Pop if there is a Navigation Controller
     if let navigationController = UIApplication.topViewController()?.parent as? UINavigationController, navigationController.viewControllers.count > 1 {

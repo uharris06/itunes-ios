@@ -15,7 +15,11 @@ class SearchRepositoryNetwork: Repository<ItunesMusicApi>, SearchRepository {
         let result = try response.get()
         if result.statusCode <= 300 {
           let data = try result.map(Response.self)
-          completion(data.results, nil)
+          if data.resultCount == 0 {
+            completion(nil, "Término no encontrado")
+          } else {
+            completion(data.results, nil)
+          }
         } else {
           completion(nil, "Término no encontrado")
         }

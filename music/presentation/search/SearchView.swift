@@ -10,8 +10,10 @@ import Foundation
 
 protocol SearchView: BaseView {
   func searchesSuccessfully(_ searches: [Search])
+  func goToCollectionVC(search: Search)
 }
 
 protocol SearchActionListener {
   func fetchSearch(term: String, offset: Int)
+  func onItemClicked(search: Search)
 }
