@@ -25,9 +25,28 @@
 		E34B4D6A23F8972800169E07 /* SearchTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B4D6923F8972800169E07 /* SearchTableViewDataSource.swift */; };
 		E34B4D6C23F8973800169E07 /* SearchTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B4D6B23F8973800169E07 /* SearchTableViewDelegate.swift */; };
 		E34B4D6E23F8995C00169E07 /* SearchAnimationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B4D6D23F8995C00169E07 /* SearchAnimationTableViewCell.swift */; };
+		E34DB70423FB769B00713368 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB70323FB769B00713368 /* NetworkManager.swift */; };
+		E34DB70623FB797200713368 /* ResultsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB70523FB797200713368 /* ResultsExt.swift */; };
+		E34DB70923FB8AEB00713368 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB70823FB8AEB00713368 /* TermsViewController.swift */; };
+		E34DB70B23FB8B7400713368 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB70A23FB8B7400713368 /* TermsView.swift */; };
+		E34DB70D23FB8B7E00713368 /* TermsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB70C23FB8B7E00713368 /* TermsPresenter.swift */; };
+		E34DB70F23FB8D4000713368 /* TermsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB70E23FB8D4000713368 /* TermsTableViewCell.swift */; };
+		E34DB71123FB8EA600713368 /* TermsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB71023FB8EA600713368 /* TermsTableViewDataSource.swift */; };
+		E34DB71323FB8F5400713368 /* TermsTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB71223FB8F5400713368 /* TermsTableViewDelegate.swift */; };
+		E34DB71523FBA49D00713368 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB71423FBA49D00713368 /* PlayerManager.swift */; };
+		E34DB71723FBAB6A00713368 /* CollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB71623FBAB6A00713368 /* CollectionPresenter.swift */; };
+		E34DB71923FBAB7300713368 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB71823FBAB7300713368 /* CollectionView.swift */; };
+		E34DB71B23FBB5EB00713368 /* StubSearchRepositoryDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB71A23FBB5EB00713368 /* StubSearchRepositoryDatabase.swift */; };
+		E34DB71D23FBB66E00713368 /* StubPlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB71C23FBB66E00713368 /* StubPlayManager.swift */; };
+		E34DB72123FBB72300713368 /* StubTermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB72023FBB72300713368 /* StubTermsView.swift */; };
+		E34DB72323FBB77900713368 /* TermsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB72223FBB77900713368 /* TermsPresenterTest.swift */; };
+		E34DB72523FBB7D200713368 /* StubNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB72423FBB7D200713368 /* StubNetworkManager.swift */; };
+		E34DB72723FBBB5600713368 /* StubSearchDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB72623FBBB5600713368 /* StubSearchDao.swift */; };
+		E34DB72A23FBBEDB00713368 /* StubCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB72923FBBEDB00713368 /* StubCollectionView.swift */; };
+		E34DB72C23FBBF6300713368 /* CollectionPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DB72B23FBBF6300713368 /* CollectionPresenterTest.swift */; };
 		E379448D23F8361F00FE80B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379448C23F8361F00FE80B8 /* Constants.swift */; };
 		E379448F23F8391000FE80B8 /* SearchRepositoryNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379448E23F8391000FE80B8 /* SearchRepositoryNetwork.swift */; };
-		E379449123F8393200FE80B8 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379449023F8393200FE80B8 /* SearchRepository.swift */; };
+		E379449123F8393200FE80B8 /* SearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379449023F8393200FE80B8 /* SearchDataSource.swift */; };
 		E379449323F83C7300FE80B8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379449223F83C7300FE80B8 /* Response.swift */; };
 		E379449A23F84FCD00FE80B8 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379449923F84FCD00FE80B8 /* SearchPresenter.swift */; };
 		E37B9CFB23F9022F00918189 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B9CFA23F9022F00918189 /* CollectionViewController.swift */; };
@@ -40,6 +59,11 @@
 		E37FD64D23F766AD00262C56 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FD64C23F766AD00262C56 /* Search.swift */; };
 		E37FD64F23F76A7500262C56 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FD64E23F76A7500262C56 /* Repository.swift */; };
 		E37FD65323F76B3900262C56 /* ItunesMusicApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FD65223F76B3900262C56 /* ItunesMusicApi.swift */; };
+		E380FA6223FAE15D002B4BF2 /* ItemRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380FA6123FAE15D002B4BF2 /* ItemRealm.swift */; };
+		E380FA6423FAEE48002B4BF2 /* SearchRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380FA6323FAEE48002B4BF2 /* SearchRealm.swift */; };
+		E380FA6723FAF0B8002B4BF2 /* SearchDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380FA6623FAF0B8002B4BF2 /* SearchDao.swift */; };
+		E380FA6A23FB0766002B4BF2 /* SearchRepositoryDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380FA6923FB0766002B4BF2 /* SearchRepositoryDataBase.swift */; };
+		E380FA6C23FB0778002B4BF2 /* SearchDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380FA6B23FB0778002B4BF2 /* SearchDatabase.swift */; };
 		E3B1394623F6E47000A7F639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B1394523F6E47000A7F639 /* AppDelegate.swift */; };
 		E3B1394D23F6E47000A7F639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B1394B23F6E47000A7F639 /* Main.storyboard */; };
 		E3B1395023F6E47000A7F639 /* music.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3B1394E23F6E47000A7F639 /* music.xcdatamodeld */; };
@@ -90,9 +114,28 @@
 		E34B4D6923F8972800169E07 /* SearchTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewDataSource.swift; sourceTree = "<group>"; };
 		E34B4D6B23F8973800169E07 /* SearchTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewDelegate.swift; sourceTree = "<group>"; };
 		E34B4D6D23F8995C00169E07 /* SearchAnimationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAnimationTableViewCell.swift; sourceTree = "<group>"; };
+		E34DB70323FB769B00713368 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E34DB70523FB797200713368 /* ResultsExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsExt.swift; sourceTree = "<group>"; };
+		E34DB70823FB8AEB00713368 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		E34DB70A23FB8B7400713368 /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
+		E34DB70C23FB8B7E00713368 /* TermsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsPresenter.swift; sourceTree = "<group>"; };
+		E34DB70E23FB8D4000713368 /* TermsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsTableViewCell.swift; sourceTree = "<group>"; };
+		E34DB71023FB8EA600713368 /* TermsTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsTableViewDataSource.swift; sourceTree = "<group>"; };
+		E34DB71223FB8F5400713368 /* TermsTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsTableViewDelegate.swift; sourceTree = "<group>"; };
+		E34DB71423FBA49D00713368 /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
+		E34DB71623FBAB6A00713368 /* CollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPresenter.swift; sourceTree = "<group>"; };
+		E34DB71823FBAB7300713368 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		E34DB71A23FBB5EB00713368 /* StubSearchRepositoryDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubSearchRepositoryDatabase.swift; sourceTree = "<group>"; };
+		E34DB71C23FBB66E00713368 /* StubPlayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPlayManager.swift; sourceTree = "<group>"; };
+		E34DB72023FBB72300713368 /* StubTermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTermsView.swift; sourceTree = "<group>"; };
+		E34DB72223FBB77900713368 /* TermsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsPresenterTest.swift; sourceTree = "<group>"; };
+		E34DB72423FBB7D200713368 /* StubNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubNetworkManager.swift; sourceTree = "<group>"; };
+		E34DB72623FBBB5600713368 /* StubSearchDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubSearchDao.swift; sourceTree = "<group>"; };
+		E34DB72923FBBEDB00713368 /* StubCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubCollectionView.swift; sourceTree = "<group>"; };
+		E34DB72B23FBBF6300713368 /* CollectionPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPresenterTest.swift; sourceTree = "<group>"; };
 		E379448C23F8361F00FE80B8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E379448E23F8391000FE80B8 /* SearchRepositoryNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryNetwork.swift; sourceTree = "<group>"; };
-		E379449023F8393200FE80B8 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		E379449023F8393200FE80B8 /* SearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataSource.swift; sourceTree = "<group>"; };
 		E379449223F83C7300FE80B8 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		E379449923F84FCD00FE80B8 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		E37B9CFA23F9022F00918189 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +148,11 @@
 		E37FD64C23F766AD00262C56 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		E37FD64E23F76A7500262C56 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		E37FD65223F76B3900262C56 /* ItunesMusicApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesMusicApi.swift; sourceTree = "<group>"; };
+		E380FA6123FAE15D002B4BF2 /* ItemRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRealm.swift; sourceTree = "<group>"; };
+		E380FA6323FAEE48002B4BF2 /* SearchRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRealm.swift; sourceTree = "<group>"; };
+		E380FA6623FAF0B8002B4BF2 /* SearchDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDao.swift; sourceTree = "<group>"; };
+		E380FA6923FB0766002B4BF2 /* SearchRepositoryDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryDataBase.swift; sourceTree = "<group>"; };
+		E380FA6B23FB0778002B4BF2 /* SearchDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDatabase.swift; sourceTree = "<group>"; };
 		E3B1394223F6E47000A7F639 /* music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B1394523F6E47000A7F639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3B1394C23F6E47000A7F639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -204,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				E34B4D5723F880ED00169E07 /* UIApplicationExt.swift */,
+				E34DB70523FB797200713368 /* ResultsExt.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -225,10 +274,52 @@
 			path = di;
 			sourceTree = "<group>";
 		};
+		E34DB70723FB8A5D00713368 /* terms */ = {
+			isa = PBXGroup;
+			children = (
+				E34DB70823FB8AEB00713368 /* TermsViewController.swift */,
+				E34DB70A23FB8B7400713368 /* TermsView.swift */,
+				E34DB70C23FB8B7E00713368 /* TermsPresenter.swift */,
+				E34DB70E23FB8D4000713368 /* TermsTableViewCell.swift */,
+				E34DB71023FB8EA600713368 /* TermsTableViewDataSource.swift */,
+				E34DB71223FB8F5400713368 /* TermsTableViewDelegate.swift */,
+			);
+			path = terms;
+			sourceTree = "<group>";
+		};
+		E34DB71E23FBB70600713368 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				E37B9D0723F911A600918189 /* StubSearchView.swift */,
+				E37B9D0923F9122300918189 /* SearchPresenterTest.swift */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		E34DB71F23FBB71400713368 /* terms */ = {
+			isa = PBXGroup;
+			children = (
+				E34DB72023FBB72300713368 /* StubTermsView.swift */,
+				E34DB72223FBB77900713368 /* TermsPresenterTest.swift */,
+			);
+			path = terms;
+			sourceTree = "<group>";
+		};
+		E34DB72823FBBEC800713368 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				E34DB72923FBBEDB00713368 /* StubCollectionView.swift */,
+				E34DB72B23FBBF6300713368 /* CollectionPresenterTest.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
 		E379448B23F8360D00FE80B8 /* utils */ = {
 			isa = PBXGroup;
 			children = (
 				E379448C23F8361F00FE80B8 /* Constants.swift */,
+				E34DB70323FB769B00713368 /* NetworkManager.swift */,
+				E34DB71423FBA49D00713368 /* PlayerManager.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -251,6 +342,8 @@
 			isa = PBXGroup;
 			children = (
 				E37B9CFA23F9022F00918189 /* CollectionViewController.swift */,
+				E34DB71623FBAB6A00713368 /* CollectionPresenter.swift */,
+				E34DB71823FBAB7300713368 /* CollectionView.swift */,
 			);
 			path = detail;
 			sourceTree = "<group>";
@@ -269,6 +362,10 @@
 				E37B9CFF23F90CCB00918189 /* StubBaseView.swift */,
 				E37B9D0123F90D7900918189 /* StubSearchRepositoryNetwork.swift */,
 				E37B9D0323F90DBD00918189 /* StubRestApi.swift */,
+				E34DB71A23FBB5EB00713368 /* StubSearchRepositoryDatabase.swift */,
+				E34DB71C23FBB66E00713368 /* StubPlayManager.swift */,
+				E34DB72423FBB7D200713368 /* StubNetworkManager.swift */,
+				E34DB72623FBBB5600713368 /* StubSearchDao.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -276,8 +373,9 @@
 		E37B9CFE23F90C5400918189 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
-				E37B9D0723F911A600918189 /* StubSearchView.swift */,
-				E37B9D0923F9122300918189 /* SearchPresenterTest.swift */,
+				E34DB72823FBBEC800713368 /* detail */,
+				E34DB71F23FBB71400713368 /* terms */,
+				E34DB71E23FBB70600713368 /* search */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -285,6 +383,7 @@
 		E37FD64423F75EEC00262C56 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				E380FA6523FAF09D002B4BF2 /* database */,
 				E37FD64B23F7609900262C56 /* entitiy */,
 				E37FD64723F75F2B00262C56 /* fundation */,
 				E37FD64A23F75F8000262C56 /* repository */,
@@ -295,6 +394,7 @@
 		E37FD64523F75EFB00262C56 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E34DB70723FB8A5D00713368 /* terms */,
 				E37B9CF923F9005A00918189 /* detail */,
 				E34B4D6023F8866700169E07 /* di */,
 				E34B4D4B23F87CF800169E07 /* fundation */,
@@ -318,7 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				E379448E23F8391000FE80B8 /* SearchRepositoryNetwork.swift */,
-				E379449023F8393200FE80B8 /* SearchRepository.swift */,
+				E379449023F8393200FE80B8 /* SearchDataSource.swift */,
 			);
 			path = repository;
 			sourceTree = "<group>";
@@ -326,6 +426,7 @@
 		E37FD64B23F7609900262C56 /* entitiy */ = {
 			isa = PBXGroup;
 			children = (
+				E380FA6023FAE141002B4BF2 /* realm */,
 				E37FD64C23F766AD00262C56 /* Search.swift */,
 				E379449223F83C7300FE80B8 /* Response.swift */,
 			);
@@ -338,6 +439,25 @@
 				E37FD65223F76B3900262C56 /* ItunesMusicApi.swift */,
 			);
 			path = net;
+			sourceTree = "<group>";
+		};
+		E380FA6023FAE141002B4BF2 /* realm */ = {
+			isa = PBXGroup;
+			children = (
+				E380FA6123FAE15D002B4BF2 /* ItemRealm.swift */,
+				E380FA6323FAEE48002B4BF2 /* SearchRealm.swift */,
+			);
+			path = realm;
+			sourceTree = "<group>";
+		};
+		E380FA6523FAF09D002B4BF2 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				E380FA6623FAF0B8002B4BF2 /* SearchDao.swift */,
+				E380FA6923FB0766002B4BF2 /* SearchRepositoryDataBase.swift */,
+				E380FA6B23FB0778002B4BF2 /* SearchDatabase.swift */,
+			);
+			path = database;
 			sourceTree = "<group>";
 		};
 		E3B1393923F6E47000A7F639 = {
@@ -660,6 +780,8 @@
 				E34B4D5A23F8810B00169E07 /* Wireframe.swift in Sources */,
 				E34B4D5823F880ED00169E07 /* UIApplicationExt.swift in Sources */,
 				E37FD64F23F76A7500262C56 /* Repository.swift in Sources */,
+				E380FA6C23FB0778002B4BF2 /* SearchDatabase.swift in Sources */,
+				E34DB70623FB797200713368 /* ResultsExt.swift in Sources */,
 				E34B4D5F23F8843600169E07 /* DataModule.swift in Sources */,
 				E34B4D4F23F87D1000169E07 /* BasePresenter.swift in Sources */,
 				E379448F23F8391000FE80B8 /* SearchRepositoryNetwork.swift in Sources */,
@@ -667,20 +789,34 @@
 				E34B4D5523F880B500169E07 /* Screen.swift in Sources */,
 				E379449323F83C7300FE80B8 /* Response.swift in Sources */,
 				E34B4D5123F87D1C00169E07 /* BaseViewController.swift in Sources */,
+				E380FA6223FAE15D002B4BF2 /* ItemRealm.swift in Sources */,
+				E34DB71323FB8F5400713368 /* TermsTableViewDelegate.swift in Sources */,
 				E34B4D5C23F883DA00169E07 /* SearchViewController.swift in Sources */,
+				E380FA6723FAF0B8002B4BF2 /* SearchDao.swift in Sources */,
 				E34B4D6223F8867600169E07 /* PresentationModule.swift in Sources */,
 				E34B4D6C23F8973800169E07 /* SearchTableViewDelegate.swift in Sources */,
+				E380FA6423FAEE48002B4BF2 /* SearchRealm.swift in Sources */,
 				E3B1394623F6E47000A7F639 /* AppDelegate.swift in Sources */,
 				E37FD64D23F766AD00262C56 /* Search.swift in Sources */,
+				E34DB70423FB769B00713368 /* NetworkManager.swift in Sources */,
+				E34DB71723FBAB6A00713368 /* CollectionPresenter.swift in Sources */,
 				E379449A23F84FCD00FE80B8 /* SearchPresenter.swift in Sources */,
+				E380FA6A23FB0766002B4BF2 /* SearchRepositoryDataBase.swift in Sources */,
 				E34B4D6823F8951B00169E07 /* SearchTableViewCell.swift in Sources */,
+				E34DB70D23FB8B7E00713368 /* TermsPresenter.swift in Sources */,
 				E34B4D4A23F87CE600169E07 /* SearchView.swift in Sources */,
 				E34B4D6E23F8995C00169E07 /* SearchAnimationTableViewCell.swift in Sources */,
-				E379449123F8393200FE80B8 /* SearchRepository.swift in Sources */,
+				E34DB71923FBAB7300713368 /* CollectionView.swift in Sources */,
+				E34DB70B23FB8B7400713368 /* TermsView.swift in Sources */,
+				E34DB71523FBA49D00713368 /* PlayerManager.swift in Sources */,
+				E379449123F8393200FE80B8 /* SearchDataSource.swift in Sources */,
 				E34B4D6A23F8972800169E07 /* SearchTableViewDataSource.swift in Sources */,
 				E34B4D6423F8871700169E07 /* ApplicationModule.swift in Sources */,
+				E34DB70923FB8AEB00713368 /* TermsViewController.swift in Sources */,
+				E34DB70F23FB8D4000713368 /* TermsTableViewCell.swift in Sources */,
 				E34B4D4D23F87D0600169E07 /* BaseView.swift in Sources */,
 				E3B1395023F6E47000A7F639 /* music.xcdatamodeld in Sources */,
+				E34DB71123FB8EA600713368 /* TermsTableViewDataSource.swift in Sources */,
 				E379448D23F8361F00FE80B8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,12 +825,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E34DB71D23FBB66E00713368 /* StubPlayManager.swift in Sources */,
 				E37B9D0823F911A600918189 /* StubSearchView.swift in Sources */,
+				E34DB72123FBB72300713368 /* StubTermsView.swift in Sources */,
 				E37B9D0223F90D7900918189 /* StubSearchRepositoryNetwork.swift in Sources */,
 				E3B1396023F6E47200A7F639 /* musicTests.swift in Sources */,
 				E37B9D0423F90DBD00918189 /* StubRestApi.swift in Sources */,
+				E34DB72C23FBBF6300713368 /* CollectionPresenterTest.swift in Sources */,
+				E34DB72A23FBBEDB00713368 /* StubCollectionView.swift in Sources */,
+				E34DB72523FBB7D200713368 /* StubNetworkManager.swift in Sources */,
 				E37B9D0023F90CCB00918189 /* StubBaseView.swift in Sources */,
+				E34DB72323FBB77900713368 /* TermsPresenterTest.swift in Sources */,
+				E34DB72723FBBB5600713368 /* StubSearchDao.swift in Sources */,
 				E37B9D0A23F9122300918189 /* SearchPresenterTest.swift in Sources */,
+				E34DB71B23FBB5EB00713368 /* StubSearchRepositoryDatabase.swift in Sources */,
 				E37B9D0623F9101B00918189 /* Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
