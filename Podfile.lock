@@ -10,6 +10,11 @@ PODS:
   - Nimble (8.0.5)
   - PKHUD (5.3.0)
   - Quick (2.2.0)
+  - Realm (4.3.2):
+    - Realm/Headers (= 4.3.2)
+  - Realm/Headers (4.3.2)
+  - RealmSwift (4.3.2):
+    - Realm (= 4.3.2)
   - Swinject (2.6.2)
   - SwinjectStoryboard (2.2.0):
     - Swinject (~> 2.6)
@@ -20,6 +25,7 @@ DEPENDENCIES:
   - Nimble
   - PKHUD (~> 5.0)
   - Quick
+  - RealmSwift
   - Swinject (~> 2.6.2)
   - SwinjectStoryboard
 
@@ -31,6 +37,8 @@ SPEC REPOS:
     - Nimble
     - PKHUD
     - Quick
+    - Realm
+    - RealmSwift
     - Swinject
     - SwinjectStoryboard
 
@@ -41,9 +49,11 @@ SPEC CHECKSUMS:
   Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
+  RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
   Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
   SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: 14a96c123d0129aee8e4f042babeb6d800266741
+PODFILE CHECKSUM: 055d4e901360dcf08c67b62fb78aa092e0f88a0f
 
 COCOAPODS: 1.8.4

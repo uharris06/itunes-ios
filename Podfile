@@ -10,6 +10,7 @@ def pods
   pod 'SwinjectStoryboard'
   pod 'Moya' , '~> 14.0'
   pod 'Kingfisher'
+  pod 'RealmSwift'
 end
 
 target 'music' do
