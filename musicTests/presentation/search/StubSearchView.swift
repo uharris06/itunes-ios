@@ -12,13 +12,23 @@ import Foundation
 class StubSearchView: StubBaseView, SearchView {
   
   var searchSuccesfullyCalled = false
-  var goToCollectionVCSuccesfullyCalled = false
+  var goToCollectionVCCalled = false
+  var goToTermsVCCalled = false
+  var showNoConnectionMessageCalled = false
   
   func searchesSuccessfully(_ searches: [Search]) {
     searchSuccesfullyCalled = true
   }
   
   func goToCollectionVC(search: Search) {
-    goToCollectionVCSuccesfullyCalled = true
+    goToCollectionVCCalled = true
+  }
+  
+  func gotToTermsVC() {
+    goToTermsVCCalled = true
+  }
+  
+  func showNoConnectionMessage() {
+    showNoConnectionMessageCalled = true
   }
 }
