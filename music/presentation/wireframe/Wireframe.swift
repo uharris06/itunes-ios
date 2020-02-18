@@ -17,6 +17,13 @@ class Wireframe {
     return Screen(viewController: collectionVC, isModal: false)
   }
   
+  func terms(termsViewControllerDelegate: TermsViewControllerDelegate) -> Screen {
+    let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+    let termsVC = storyboard.instantiateViewController(withIdentifier: String(describing: TermsViewController.self)) as! TermsViewController
+    termsVC.termViewControllerDelegate = termsViewControllerDelegate
+    return Screen(viewController: termsVC, isModal: false)
+  }
+  
   func popCurrentScreen(_ completion: @escaping (() -> Void) = { }) {
     // Pop if there is a Navigation Controller
     if let navigationController = UIApplication.topViewController()?.parent as? UINavigationController, navigationController.viewControllers.count > 1 {

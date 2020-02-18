@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchViewController: BaseViewController<SearchPresenter>, SearchView {
+class SearchViewController: BaseViewController<SearchPresenter>, SearchView, TermsViewControllerDelegate {
   
   @IBOutlet var searchTableView: UITableView!
   
@@ -35,7 +35,7 @@ class SearchViewController: BaseViewController<SearchPresenter>, SearchView {
           self.presenter.onItemClicked(search: self.dataSource!.searchList[index])
       }
     }, onLoadMoreData: {
-      if !(self.delegate?.isLoading ?? false) {
+      if !(self.delegate?.isLoading ?? false) && NetworkManager().isConnectedToInternet() {
         if !self.term.isEmpty {
           self.delegate?.isLoading = true
           self.offset += 1
@@ -54,8 +54,27 @@ class SearchViewController: BaseViewController<SearchPresenter>, SearchView {
     self.delegate?.isLoading = false
   }
   
+  func showNoConnectionMessage() {
+    let positiveAction = UIAlertAction(title: "OK", style: .default) { _ in
+      self.presenter.onTermsConfirmed()
+    }
+    let negativeAction = UIAlertAction(title: "Cancelar", style: .destructive, handler: nil)
+    self.showAlertMessage("En estos momentos no tiene internet. Desea ver búsquedas anteriores?", positiveAction: positiveAction, negativeAction: negativeAction)
+  }
+  
+  func gotToTermsVC() {
+    self.searchController.dismiss(animated: true) {
+      self.wireframe.terms(termsViewControllerDelegate: self).show()
+    }
+  }
+  
   func goToCollectionVC(search: Search) {
     wireframe.collection(search: search).show()
+  }
+  
+  func termSelected(term: String) {
+    searchController.searchBar.text = term
+    presenter.fetchLocalSearch(term: term)
   }
 }
 

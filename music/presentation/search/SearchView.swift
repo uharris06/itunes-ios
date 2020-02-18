@@ -11,9 +11,13 @@ import Foundation
 protocol SearchView: BaseView {
   func searchesSuccessfully(_ searches: [Search])
   func goToCollectionVC(search: Search)
+  func gotToTermsVC()
+  func showNoConnectionMessage()
 }
 
 protocol SearchActionListener {
   func fetchSearch(term: String, offset: Int)
+  func fetchLocalSearch(term: String)
   func onItemClicked(search: Search)
+  func onTermsConfirmed()
 }

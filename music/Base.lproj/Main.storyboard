@@ -2,11 +2,68 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ne-pd-GgL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Terms View Controller-->
+        <scene sceneID="3Ww-P7-vib">
+            <objects>
+                <viewController storyboardIdentifier="TermsViewController" id="NJt-pt-YIv" customClass="TermsViewController" customModule="music" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I4z-Bm-gAO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8GL-N9-TI8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TermsTableViewCellIdentifier" id="aQ1-hE-qMT" customClass="TermsTableViewCell" customModule="music" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aQ1-hE-qMT" id="3ai-RI-Vri">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLw-Tz-ufI">
+                                                    <rect key="frame" x="36" y="11.5" width="323" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bLw-Tz-ufI" firstAttribute="leading" secondItem="3ai-RI-Vri" secondAttribute="leadingMargin" constant="16" id="dfb-CY-OvT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bLw-Tz-ufI" secondAttribute="trailing" constant="16" id="jvP-yn-ebP"/>
+                                                <constraint firstItem="bLw-Tz-ufI" firstAttribute="centerY" secondItem="3ai-RI-Vri" secondAttribute="centerY" id="py3-lC-h8A"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="termLabel" destination="bLw-Tz-ufI" id="rW9-jO-Wxp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8GL-N9-TI8" firstAttribute="leading" secondItem="IsO-XX-pqM" secondAttribute="leading" id="F9b-gz-a6P"/>
+                            <constraint firstItem="IsO-XX-pqM" firstAttribute="trailing" secondItem="8GL-N9-TI8" secondAttribute="trailing" id="fOD-ng-om8"/>
+                            <constraint firstItem="IsO-XX-pqM" firstAttribute="bottom" secondItem="8GL-N9-TI8" secondAttribute="bottom" id="mn1-xP-HzJ"/>
+                            <constraint firstItem="8GL-N9-TI8" firstAttribute="top" secondItem="IsO-XX-pqM" secondAttribute="top" id="tPJ-pu-JDG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IsO-XX-pqM"/>
+                    </view>
+                    <connections>
+                        <outlet property="termsTableView" destination="8GL-N9-TI8" id="DGy-rQ-3X9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQt-8h-5y7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="-542"/>
+        </scene>
         <!--Search View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -140,9 +197,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpO-iF-JhC">
+                                <rect key="frame" x="48" y="400.5" width="318" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TOB-Os-QgP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPlayButtonPressed:" destination="GTJ-QY-4t7" eventType="touchUpInside" id="hZN-LH-B5c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="BpO-iF-JhC" firstAttribute="leading" secondItem="pER-ih-wWo" secondAttribute="leading" constant="48" id="3rH-OU-wzV"/>
+                            <constraint firstItem="BpO-iF-JhC" firstAttribute="top" secondItem="UzN-Fu-uZw" secondAttribute="bottom" constant="48" id="5UO-lW-E55"/>
                             <constraint firstItem="UzN-Fu-uZw" firstAttribute="top" secondItem="aoO-zw-Wu3" secondAttribute="bottom" constant="16" id="Aq1-JF-cJ1"/>
                             <constraint firstItem="aoO-zw-Wu3" firstAttribute="leading" secondItem="pER-ih-wWo" secondAttribute="leading" constant="16" id="Ejl-6X-n3E"/>
                             <constraint firstItem="pER-ih-wWo" firstAttribute="trailing" secondItem="MMK-XK-OgY" secondAttribute="trailing" id="EsV-qK-ikm"/>
@@ -152,6 +225,7 @@
                             <constraint firstItem="pER-ih-wWo" firstAttribute="trailing" secondItem="aoO-zw-Wu3" secondAttribute="trailing" constant="16" id="Zzv-ip-sFy"/>
                             <constraint firstItem="aoO-zw-Wu3" firstAttribute="top" secondItem="MMK-XK-OgY" secondAttribute="bottom" constant="16" id="bO2-H9-2yz"/>
                             <constraint firstItem="MMK-XK-OgY" firstAttribute="top" secondItem="pER-ih-wWo" secondAttribute="top" id="oIv-Wb-cIo"/>
+                            <constraint firstItem="pER-ih-wWo" firstAttribute="trailing" secondItem="BpO-iF-JhC" secondAttribute="trailing" constant="48" id="q6s-47-Kcp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pER-ih-wWo"/>
                     </view>
@@ -159,6 +233,7 @@
                         <outlet property="artImageView" destination="MMK-XK-OgY" id="fsD-A6-8M1"/>
                         <outlet property="artistLabel" destination="aoO-zw-Wu3" id="E3c-2G-hfx"/>
                         <outlet property="collectionName" destination="UzN-Fu-uZw" id="5ye-E0-wzg"/>
+                        <outlet property="playPauseButton" destination="BpO-iF-JhC" id="Rhg-zM-Vu7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkP-Ls-GTC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
