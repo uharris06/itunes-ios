@@ -11,6 +11,10 @@ import Moya
 
 class DataModule {
   static func setup(_ defaultContainer: Container) {
+    
+    defaultContainer.register(SearchRepositoryDataBase.self) { r in
+      SearchRepositoryDataBase(dao: SearchDao())
+    }.inObjectScope(.container)
 
     defaultContainer.register(SearchRepositoryNetwork.self) { r in
       SearchRepositoryNetwork(api: getMoyaProvider())}

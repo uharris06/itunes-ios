@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SearchRepositoryNetwork: Repository<ItunesMusicApi>, SearchRepository {
+class SearchRepositoryNetwork: Repository<ItunesMusicApi>, SearchDataSource {
   func fetchSearch(term: String, offset: Int = 0, completion: @escaping ([Search]?, String?) -> Void){
     api.request(ItunesMusicApi.search(term: term, offset: offset)){ response in
       do {

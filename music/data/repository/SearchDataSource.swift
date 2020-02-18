@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol SearchRepository {
+protocol SearchDataSource {
   func fetchSearch(term: String, offset: Int, completion: @escaping ([Search]?, String?) -> Void)
 }
