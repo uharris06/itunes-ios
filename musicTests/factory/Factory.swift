@@ -12,7 +12,7 @@ import Foundation
 class Factory {
   
   class func makeSearch(count: Int) -> Search {
-    return Search(trackId: count, artistName: "", collectionName: "", trackName: "", imageUrl: "", url: "")
+    return Search(trackId: count, artistName: "", collectionName: "", trackName: "", imageUrl: "", url: "", previewUrl: "")
   }
   
   class func makeSearchList(count: Int) -> [Search] {
